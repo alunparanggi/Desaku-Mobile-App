@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Desaku</string>
+
+    <string-array name="jenis_surat">
+        <item>Pilih Jenis Surat</item>
+        <item>Surat Keterangan Kurang Mampu</item>
+        <item>Surat Keterangan Domisili</item>
+        <item>Surat Keterangan Domisili Usaha</item>
+        <item>Surat Keterangan Untuk Nikah</item>
+        <item>Surat Keterangan Kematian</item>
+        <item>Surat Keterangan Kelahiran</item>
+        <item>Surat Keterangan Kelakuan Baik</item>
+        <item>Surat Keterangan Pindah</item>
+    </string-array>
+
+    <string-array name="jenis_kelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+</resources>

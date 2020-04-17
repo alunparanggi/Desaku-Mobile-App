@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ifunila.desakumobilecomputing">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.NotifActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.DashboardActivity"></activity>
+        <activity
+            android:name=".ui.KritikSaranActivity"
+            android:parentActivityName=".ui.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DetailAcaraActivity"
+            android:parentActivityName=".ui.AcaraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AcaraActivity"
+            android:parentActivityName=".ui.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PengajuanSuratActivity"
+            android:parentActivityName=".ui.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

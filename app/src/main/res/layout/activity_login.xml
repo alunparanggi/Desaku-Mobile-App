@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ifunila.desakumobilecomputing.ui.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MASUK"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="#444444"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOMOR INDUK KEPENDUDUKAN"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="80dp"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/et_nik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/bg_et_login"
+        android:padding="12dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:text="masuk"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="@drawable/bg_button_login"
+        android:id="@+id/btn_login"/>
+
+</LinearLayout>

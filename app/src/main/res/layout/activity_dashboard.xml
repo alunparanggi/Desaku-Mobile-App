@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DashboardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/bg_dashboard_atas"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ll_menu"
+                android:paddingHorizontal="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_alignParentStart="true"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logo_homepage"/>
+
+                <ImageView
+                    android:layout_toStartOf="@id/btn_logout"
+                    android:layout_width="25dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/notif"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="80dp"
+                    android:id="@+id/btn_notif"/>
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="32dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logout"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="25dp"
+                    android:id="@+id/btn_logout"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_nama_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rio Ferdian Wicaksono"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                android:layout_below="@+id/ll_menu"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_nik_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18384923857"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_below="@+id/tv_nama_dashboard"
+                android:layout_marginTop="5dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_marginTop="180dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/person"/>
+
+        <TextView
+            android:layout_below="@+id/iv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELAMAT DATANG"
+            android:textStyle="bold"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:id="@+id/tv_welcome"
+            android:textColor="@color/grey"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/tv_welcome2"
+            android:layout_below="@+id/tv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DI DESAKU"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/tv_sampaikan"
+            android:layout_below="@id/tv_welcome2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sampaikan aspirasi dan kebutuhan administrasi jadi lebih mudah"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sampaikan"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="55dp">
+
+            <LinearLayout
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/pengajuan_surat"
+                    android:id="@+id/btn_pengajuan_surat"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengajuan \nSurat"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/acara"
+                    android:id="@+id/btn_acara"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acara \nDesa"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/kritik_saran"
+                    android:id="@+id/btn_kritik_saran"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kritik dan \nSaran"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

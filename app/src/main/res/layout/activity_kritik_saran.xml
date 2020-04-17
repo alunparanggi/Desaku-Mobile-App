@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ifunila.desakumobilecomputing.ui.KritikSaranActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Kritik dan Saran"
+        android:id="@+id/tb_kritiksaran"/>
+
+    <LinearLayout
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginEnd="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/kritik_saran"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kritik dan Saran"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+
+    <EditText
+        android:gravity="start"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/et_kritiksaran"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/bg_et_pengajuan"
+        android:hint="Masukan kritik atau saran Anda"
+        android:inputType="textCapSentences"
+        android:maxLength="1140"
+        android:paddingBottom="10dp"
+        android:singleLine="false" />
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KIRIM"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:id="@+id/btn_kirim_kritiksaran"/>
+
+</LinearLayout>

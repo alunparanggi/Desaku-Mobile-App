@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ifunila.desakumobilecomputing.ui.PengajuanSuratActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Pengajuan Surat"
+        android:id="@+id/tb_pengajuan"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginHorizontal="28sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih jenis surat terlebih dahulu!"
+                android:textColor="@color/redDark"
+                android:id="@+id/tv_error_sp"/>
+
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_jenis_surat"
+                android:entries="@array/jenis_surat"/>
+
+            <LinearLayout
+                android:layout_marginHorizontal="27dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="28sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lengkapi biodata terlebih dahulu!"
+                android:textColor="@color/redDark"
+                android:id="@+id/tv_error_bio"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biodata Pengaju"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="27dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:id="@+id/et_nama"
+                    android:hint="Nama"
+                    android:background="@drawable/bg_et_pengajuan"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="12dp"/>
+
+                <Spinner
+                    android:entries="@array/jenis_kelamin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/sp_jk"
+                    android:background="@drawable/bg_et_pengajuan"
+                    android:paddingVertical="7dp"
+                    android:paddingHorizontal="12dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginVertical="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingHorizontal="12dp"
+                    android:hint="Pekerjaan"
+                    android:id="@+id/et_pekerjaan"
+                    android:background="@drawable/bg_et_pengajuan"
+                    android:paddingVertical="5dp"/>
+
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="Agama"
+                    android:paddingHorizontal="12dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/et_agama"
+                    android:background="@drawable/bg_et_pengajuan"
+                    android:paddingVertical="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginHorizontal="27dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="27dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingHorizontal="12dp"
+                    android:hint="Kab."
+                    android:id="@+id/et_kabupaten"
+                    android:background="@drawable/bg_et_pengajuan"
+                    android:paddingVertical="5dp"/>
+
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="Kec."
+                    android:paddingHorizontal="12dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/et_kecamatan"
+                    android:background="@drawable/bg_et_pengajuan"
+                    android:paddingVertical="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginVertical="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:id="@+id/et_desa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_et_pengajuan"
+                    android:hint="Desa"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="5dp" />
+
+                <EditText
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="RT"
+                    android:paddingHorizontal="12dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/et_rt"
+                    android:background="@drawable/bg_et_pengajuan"
+                    android:paddingVertical="5dp"/>
+
+                <EditText
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:hint="RW"
+                    android:paddingHorizontal="12dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/et_rw"
+                    android:background="@drawable/bg_et_pengajuan"
+                    android:paddingVertical="5dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginVertical="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:textColor="@color/white"
+                android:text="AJUKAN PERMOHONAN"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:id="@+id/btn_lanjut"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
