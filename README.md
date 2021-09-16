@@ -1,14 +1,14 @@
 
 # Desaku
 
-Sebuah aplikasi (protoype) yang berguna untuk memudahkan kebutuhab administrasi masyarakat desa.
+Sebuah aplikasi (protoype) yang berguna untuk memudahkan kebutuhan administrasi masyarakat desa.
 
 Fitur yang ada dalam aplikasi Desaku :
 - Login
 - Pengajuan Surat
 - Lihat Daftar Acara Desa
 - Kritik dan Saran
-- Notifikasi
+- Laman Notifikasi
 
 Aplikasi ini dibuat sebagai tugas akhir mata kuliah Mobile Computing yang dibangun menggunakan Kotlin sebagai bahasa pemrogramannya
 
